@@ -1,0 +1,27 @@
+.counter {
+  width: 280px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px aqua solid;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px 10px rgba(0, 255, 255, 0.2);
+}
+
+.buttonsArea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  border: 2px aqua solid;
+  border-radius: 10px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

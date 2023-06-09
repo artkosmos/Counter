@@ -1,0 +1,30 @@
+.button {
+  width: 80px;
+  height: 25px;
+  font-weight: bold;
+  letter-spacing: 0.02rem;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.button.disable {
+  background-color: rgba(246, 20, 20, 0.5);
+  transform: none;
+  cursor: not-allowed;
+}
+
+.aqua {
+  background-color: aqua;
+}
+
+.orange {
+  background-color: rgba(236, 137, 96, 0.8);
+}

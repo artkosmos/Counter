@@ -1,0 +1,27 @@
+.instruction {
+  height: 200px;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px rgba(248, 107, 49, 0.8) solid;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px 10px rgba(213, 119, 51, 0.35);
+}
+
+.buttonsArea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  border: 2px rgba(248, 107, 49, 0.8) solid;
+  border-radius: 10px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

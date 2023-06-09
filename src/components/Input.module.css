@@ -1,0 +1,29 @@
+.inputLine {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.input {
+  width: 100px;
+}
+.errorMessage {
+  color: transparent;
+  font-size: 12px;
+  align-self: flex-end;
+}
+
+.errorMessage.active {
+  color: red;
+}
+
+.error {
+  border-color: red;
+  box-shadow: 0 0 100px 5px rgba(255, 0, 0, 0.5) inset;
+  outline: 1px solid red;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+}

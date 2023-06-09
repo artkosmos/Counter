@@ -1,0 +1,25 @@
+.scoreboard {
+  width: 250px;
+  height: 100px;
+  background-color: aqua;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.red {
+  color: red;
+  font-size: 50px;
+}
+
+.counterErrorMessage {
+  color: red;
+  font-size: 18px;
+}
+
+.counterMessage {
+  font-size: 16px;
+}
