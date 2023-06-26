@@ -1,4 +1,3 @@
-import React from 'react';
 import style from "./Instruction.module.css";
 import {Button} from "./Button";
 import {DisplayInstruction} from "./DisplayInstruction";

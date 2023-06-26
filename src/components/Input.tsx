@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState} from 'react';
+import {ChangeEvent} from 'react';
 import style from './Input.module.css'
 
 type InputPropsType = {
@@ -18,20 +18,6 @@ export const Input = ({
                         inputError,
                         setCondition
                       }: InputPropsType) => {
-
-  /*const [error, setError] = useState<boolean | null>(null)*/
-
-  /*const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
-    if (Number(event.currentTarget.value) < 0) {
-      setError(true)
-      setIsDisabled?.(true)
-    } else {
-      setError(null)
-      setIsDisabled?.(false)
-    }
-
-    callBack?.(Number(event.currentTarget.value))
-  }*/
 
   const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
     callBack?.(Number(event.currentTarget.value))

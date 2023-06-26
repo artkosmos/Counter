@@ -1,20 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import s from './App.module.css';
 import {Counter} from "./components/Counter";
 import {Instruction} from "./components/Instruction";
-import {saveState} from "./localStorage";
-
-export type ValuesType = {
-  min: number
-  max: number
-}
+import {getFromLocalStorage, saveToLocalStorage} from "./localStorage/srorage";
 
 
 function App() {
 
-  const [maxValue, setMaxValue] = useState<number>(5)
-  const [minValue, setMinValue] = useState<number>(0)
-  const [counter, setCounter] = useState<number>(0)
+  const [maxValue, setMaxValue] = useState<number>(getFromLocalStorage('maxValue', 5))
+  const [minValue, setMinValue] = useState<number>(getFromLocalStorage('minValue', 0))
+  const [counter, setCounter] = useState<number>(getFromLocalStorage('minValue', 0))
   const [maxInputError, setMaxInputError] = useState<boolean>(false)
   const [minInputError, setMinInputError] = useState<boolean>(false)
   const [condition, setCondition] = useState<boolean>(false)
@@ -43,6 +38,8 @@ function App() {
   }
 
   const installInstruction = () => {
+    saveToLocalStorage('maxValue', maxValue)
+    saveToLocalStorage('minValue', minValue)
     setCounter(minValue)
     setCondition(false)
   }

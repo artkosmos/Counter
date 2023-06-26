@@ -1,4 +1,3 @@
-import React from 'react';
 import style from "./DisplayInstruction.module.css";
 import {Input} from "./Input";
 
